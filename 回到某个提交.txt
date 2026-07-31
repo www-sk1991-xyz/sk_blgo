@@ -1,0 +1,28 @@
+# 1. 查看历史
+git log --oneline
+
+会出来提交的历史
+100fd3b  这次又添加了一个ssh过程     ← 最新（当前状态）
+90c1961  添加了两个说明文件
+e6ed2ec  添加Git推送问题解决指南
+581f9a3  更新EdgeOne部署说明和压缩包
+120aa8a  Initial commit              ← 最初
+
+
+# 2. 想回到 "添加文件" 那个版本
+# 强制回退到某个版本（例如回到 "Initial commit"）
+git reset --hard 120aa8a
+
+如果回到的版本不是想要的还找不到被删除的文件了,还有救
+git reset --hard 120aa8a，这个命令的意思是：
+强制回到 Initial commit 那个版本，丢弃它之后的所有提交！
+所以 90c1961、e6ed2ec、581f9a3、100fd3b 这些提交都被"删掉了"。
+
+
+Git 有一个操作日志（reflog），会记录你所有的操作，包括 reset。可以通过它找回丢失的提交。
+git reflog
+
+恢复到 reset 之前的状态 找到 reset 之前的那次提交的哈希值（例如 100fd3b)
+git reset --hard 100fd3b
+
+

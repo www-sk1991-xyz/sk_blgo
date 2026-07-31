@@ -1,0 +1,46 @@
+第一步：绑定远程仓库（只需做一次）
+cd /c/Users/31737/Desktop/bk1
+git remote add origin https://github.com/www-sk1991-xyz/sk_blgo.git
+
+验证是否绑定成功：git remote -v
+成功会打印出来仓库地址
+
+
+第二步：
+1,修改文件后的推送流程（每次修改都要做）
+git status
+2,把修改的文件添加到暂存区(这个点表示全部文件)
+git add .
+3,提交到本地仓库（写清楚改了什么）
+git commit -m "这里写修改说明"
+4,推送到 GitHub
+git push
+
+
+常用命令
+git remote -v	查看绑定的远程仓库地址
+git status	查看当前修改状态
+git add .	添加所有修改的文件
+git commit -m "描述"	提交到本地仓库
+git push	推送到远程仓库
+git pull	拉取远程最新代码
+git log	查看提交历史
+
+
+git config --global user.email	查看全局邮箱
+git config --global user.name	查看全局用户名
+git config user.email	查看当前仓库邮箱
+git config user.name	查看当前仓库用户名
+git config --list	查看所有配置
+
+
+修改 Git 邮箱和名字
+git config --global user.email "你的新邮箱@example.com"
+git config --global user.name "你的新名字"
+
+cd /c/Users/31737/Desktop/bk1
+git config user.email "你的新邮箱@example.com"
+git config user.name "你的新名字"
+
+
+

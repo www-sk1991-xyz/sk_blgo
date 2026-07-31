@@ -1,0 +1,14 @@
+# 进入仓库目录
+cd /c/Users/31737/Desktop/bk1
+
+# 查看修改了哪些文件
+git status
+
+# 添加所有修改
+git add .
+
+# 提交
+git commit -m "更新首页样式"
+
+# 推送到 GitHub
+git push

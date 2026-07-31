@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": "2024-01-15-welcome",
+      "title": "欢迎来到我的技术博客",
+      "date": "2024-01-15",
+      "summary": "这是我的第一篇博客文章，介绍了我创建这个博客的初衷和未来的内容规划。这里将分享编程、AI和开发相关的知识和经验。",
+      "tags": ["随笔", "开始"],
+      "readingTime": "3分钟",
+      "published": true
+    },
+    {
+      "id": "2024-02-20-javascript-tips",
+      "title": "JavaScript 实用技巧分享",
+      "date": "2024-02-20",
+      "summary": "分享一些在开发中常用的JavaScript技巧，包括数组操作、对象解构、异步处理等实用方法，提升你的开发效率。",
+      "tags": ["JavaScript", "前端", "技巧"],
+      "readingTime": "8分钟",
+      "published": true
+    },
+    {
+      "id": "2024-03-15-python-ai-intro",
+      "title": "Python AI开发入门指南",
+      "date": "2024-03-15",
+      "summary": "介绍如何使用Python进行AI开发，包括环境配置、常用库介绍、以及第一个机器学习项目的完整实现过程。",
+      "tags": ["Python", "AI", "机器学习"],
+      "readingTime": "12分钟",
+      "published": true
+    }
+  ]
+}

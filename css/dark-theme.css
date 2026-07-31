@@ -1,0 +1,97 @@
+/* ========================================
+   深色主题样式
+   ======================================== */
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border);
+}
+
+/* 选择文本样式 */
+::selection {
+    background-color: rgba(88, 166, 255, 0.3);
+    color: var(--text-primary);
+}
+
+/* 链接样式 */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* 代码样式 */
+code {
+    background-color: var(--bg-tertiary);
+    padding: 0.2em 0.4em;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: #ff7b72;
+}
+
+/* 引用块样式 */
+blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* 水平线样式 */
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--border);
+    margin: var(--spacing-2xl) 0;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    display: block;
+    margin: var(--spacing-lg) auto;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-lg) 0;
+}
+
+th, td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: var(--bg-tertiary);
+}

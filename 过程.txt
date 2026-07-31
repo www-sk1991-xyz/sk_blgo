@@ -8,7 +8,7 @@ git remote add origin https://github.com/www-sk1991-xyz/sk_blgo.git
 
 第二步：
 1,修改文件后的推送流程（每次修改都要做）
-git status
+git status  //查看修改状态
 2,把修改的文件添加到暂存区(这个点表示全部文件)
 git add .
 3,提交到本地仓库（写清楚改了什么）
